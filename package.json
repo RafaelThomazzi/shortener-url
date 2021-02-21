@@ -1,7 +1,7 @@
 {
    "name": "wiser-api",
    "version": "0.0.1",
-   "description": "Awesome project developed with TypeORM.",
+   "description": "Shortener url developed with Typescript, Postgres, TypeORM.",
    "devDependencies": {
       "@types/express": "^4.17.11",
       "@types/node": "^8.0.29",
@@ -10,8 +10,10 @@
       "typescript": "3.3.3333"
    },
    "dependencies": {
+      "@types/dotenv": "^8.2.0",
       "@types/moment": "^2.13.0",
       "body-parser": "^1.18.1",
+      "dotenv": "^8.2.0",
       "express": "^4.15.4",
       "pg": "^8.4.0",
       "reflect-metadata": "^0.1.10",

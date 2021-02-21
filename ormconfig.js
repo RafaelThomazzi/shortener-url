@@ -1,10 +1,7 @@
-{
+console.log('process.env.DATABASE_URL', process.env.DATABASE_URL);
+module.exports = {
    "type": "postgres",
-   "host": "localhost",
-   "port": 5432,
-   "username": "postgres",
-   "password": "root",
-   "database": "wiser-challenge",
+   "url": process.env.DATABASE_URL,
    "synchronize": true,
    "logging": false,
    "entities": [
@@ -22,3 +19,4 @@
       "subscribersDir": "src/subscriber"
    }
 }
+
