@@ -39,7 +39,7 @@ export const redirect = async (req: Request, res: Response) => {
         const { short_url } = req.params
         const result = await getRepository(Url).findOne({short_url, expires_at: MoreThan(new Date())});
         if(result){
-            return res.json({url: result.url});
+            return res.redirect(result.url);
         }
 
         return res.status(404).json({error: 'url not found'});
